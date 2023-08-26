@@ -4,15 +4,14 @@
 
   <groupId>com.olexyn</groupId>
   <artifactId>propconf</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1</version>
   <packaging>jar</packaging>
 
   <name>propconf</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>20</maven.compiler.source>
-    <maven.compiler.target>20</maven.compiler.target>
+    <xx.java.version>17</xx.java.version>
   </properties>
 
   <dependencyManagement>
@@ -20,7 +19,7 @@
       <dependency>
         <groupId>com.olexyn</groupId>
         <artifactId>zeebom</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -33,4 +32,21 @@
       <artifactId>lombok</artifactId>
     </dependency>
   </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.11.0</version>
+          <configuration>
+            <source>${xx.java.version}</source>
+            <target>${xx.java.version}</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
 </project>
