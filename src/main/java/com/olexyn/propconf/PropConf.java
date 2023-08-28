@@ -1,4 +1,4 @@
-package com.olexyn;
+package com.olexyn.propconf;
 
 import java.io.FileInputStream;
 import java.io.IOException;
