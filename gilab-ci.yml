@@ -1,0 +1,6 @@
+variables:
+    MY_VARIABLE: "some_value"
+
+job_name:
+    script:
+        - echo $MY_VARIABLE
